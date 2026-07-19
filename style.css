@@ -1240,3 +1240,59 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+/* -------------------------------------------------------------
+   RESUME SECTION SHOWCASE
+   ------------------------------------------------------------- */
+.resume-section {
+    padding: 6rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.resume-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.resume-controls-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(3, 5, 12, 0.6);
+}
+
+.resume-filename {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.resume-image-container {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+    background: rgba(2, 3, 6, 0.6);
+    max-height: 960px;
+    overflow-y: auto;
+}
+
+.resume-img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .resume-image-container {
+        padding: 1.25rem 0.5rem;
+    }
+}
+

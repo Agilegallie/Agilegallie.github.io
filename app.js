@@ -2,7 +2,7 @@
 const projectsData = {
     "astro-core": {
         title: "ASTRO-CORE Observation System",
-        description: "Android application prototype for tracking Near-Earth Objects (NEOs). Designed with Jetpack Compose using Google Stitch exports as a tribute to World Asteroid Day to promote space-observation and STEM education.",
+        description: "Android application prototype for tracking Near-Earth Objects (NEOs). Built as a refinement and improvement on previous Kepler transit pipeline UX projects, incorporating World Asteroid Day STEM outreach layouts using Jetpack Compose.",
         framework: "Kotlin / Jetpack Compose",
         platform: "Android Mobile / HUD",
         frame: "phone",
@@ -13,7 +13,7 @@ const projectsData = {
     },
     "nasa-smartwatch": {
         title: "NASA Smartwatch UI Dashboard",
-        description: "A glanceable Wear OS system interface tailored for astronauts aboard the International Space Station. Features low-power OLED styling, warning protocols, airlock caution telemetry, and astronaut schedules.",
+        description: "A glanceable Wear OS system interface tailored for astronauts aboard the International Space Station. Developed as part of the NASA Space Apps Challenges, representing substantial usability and layout improvements over previous watch UI/UX projects.",
         framework: "HTML5 / Vanilla CSS & JS",
         platform: "Wear OS (Google Pixel Watch)",
         frame: "watch",
@@ -44,7 +44,7 @@ const projectsData = {
     },
     "exoplanet-prioritizer": {
         title: "Exoplanet Candidate Prioritizer",
-        description: "TESS exoplanet vetting and habitability classification dashboard designed for the Nancy Grace Roman Space Telescope pipelines to prioritize candidates for SETI observation.",
+        description: "TESS exoplanet vetting and habitability classification dashboard designed for the Nancy Grace Roman Space Telescope pipelines to prioritize candidates for SETI observation. Developed as a NASA Space Apps Challenge project to refine exoplanet discovery workflows.",
         framework: "HTML5 / Astro-science modules",
         platform: "Widescreen / Web Console",
         frame: "monitor",
@@ -54,7 +54,7 @@ const projectsData = {
     },
     "exoplanet-vetting": {
         title: "Exoplanet Vetting Tool",
-        description: "Kepler and TESS transit light curve vetting interface created for NASA Space Apps 2025. Allows astronomers to flag threshold noise and validate candidate orbits.",
+        description: "Kepler and TESS transit light curve vetting interface created for NASA Space Apps 2025. Offers substantial UI/UX refinements to improve data validation rates over previous vetting designs.",
         framework: "HTML5 / Kepler Science Canvas",
         platform: "Widescreen / Analysis Console",
         frame: "monitor",
