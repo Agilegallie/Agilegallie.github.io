@@ -89,7 +89,7 @@ function initTelemetryConsole() {
     const logPool = [
         { text: '// Initializing connection to orbital database...', type: 'dim' },
         { text: '[OK] Connected to github.com/Agilegallie/astro-core', type: 'cyan' },
-        { text: '[OK] Connected to github.com/Agilegallie/crew-watch-wireframes', type: 'cyan' },
+        { text: '[OK] Connected to github.com/Agilegallie/NASA_Smartwatch', type: 'cyan' },
         { text: '// Fetching telemetry payload metadata...', type: 'normal' },
         { text: '[INFO] Syncing telescope sensor node: 100% complete', type: 'normal' },
         { text: '[INFO] System check: 14 active observation channels verified', type: 'normal' },
