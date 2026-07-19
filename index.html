@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGILEGALLIE — Space Exploration UI & Telemetry Hub</title>
+    <meta name="description" content="Portal of space flight instrument UI, deep space observation calibration dashboards, and astronaut wearables developed by Agilegallie for NASA ISS challenges and World Asteroid Day.">
+    
+    <!-- SEO & Icons -->
+    <link rel="icon" href="https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CSS Stars Background -->
+    <div class="space-bg">
+        <div class="stars-layer-1"></div>
+        <div class="stars-layer-2"></div>
+        <div class="stars-layer-3"></div>
+        <div class="nebula"></div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="hub-header">
+        <div class="header-container">
+            <div class="brand">
+                <span class="pulse-dot"></span>
+                <span class="brand-text">AGILEGALLIE<span class="brand-sub">//MISSION-HUB</span></span>
+            </div>
+            <nav class="hub-nav">
+                <a href="#hero" id="nav-home">Home</a>
+                <a href="#projects" id="nav-projects">Projects</a>
+                <a href="#console" id="nav-console">Telemetry</a>
+                <a href="#tech-specs" id="nav-specs">Specifications</a>
+                <a href="https://github.com/Agilegallie" target="_blank" class="github-btn" id="nav-github-link">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.646.64.699 1.026 1.592 1.026 2.683 0 3.842-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="grid-overlay"></div>
+        <div class="section-container">
+            <div class="hero-content">
+                <div class="mission-badge" id="hero-badge">SYSTEM STABLE // ONLINE</div>
+                <h1 class="hero-title">Space exploration & flight UI systems</h1>
+                <p class="hero-subtitle">
+                    A suite of high-fidelity human-machine interface (HMI) prototypes designed for deep space asteroid tracking, telemetry analysis, and astronaut crew command wearables.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" id="btn-explore">Explore Mission Deck</a>
+                    <a href="#console" class="btn btn-secondary" id="btn-logs">View System Logs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            
+            <div class="section-header">
+                <div class="cyan-tag">PROJECT PORTFOLIO</div>
+                <h2>Mission Prototypes</h2>
+                <p>Select a mission terminal below to launch and interact with the live telemetry controls.</p>
+            </div>
+
+            <!-- Project Selector Tabs -->
+            <div class="project-tabs">
+                <button class="tab-btn active" data-project="astro" id="tab-astro">
+                    <span class="tab-num">01</span>
+                    <div class="tab-label">
+                        <span class="tab-title">ASTRO-CORE</span>
+                        <span class="tab-meta">Android Telemetry HUD</span>
+                    </div>
+                </button>
+                <button class="tab-btn" data-project="watch" id="tab-watch">
+                    <span class="tab-num">02</span>
+                    <div class="tab-label">
+                        <span class="tab-title">NASA Smartwatch</span>
+                        <span class="tab-meta">Wear OS Crew Wearable</span>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Project Content Wrapper -->
+            <div class="project-content-deck">
+                
+                <!-- ASTRO-CORE Deck -->
+                <div class="project-panel active" id="panel-astro">
+                    <div class="panel-grid">
+                        <div class="panel-details">
+                            <span class="status-chip badge-cyan">ASTEROID DETECTOR</span>
+                            <h3>ASTRO-CORE Observation System</h3>
+                            <p class="panel-desc">
+                                A high-fidelity Android application prototype for tracking Near-Earth Objects (NEOs). Designed using Jetpack Compose and Google Stitch exports, built as a tribute to World Asteroid Day to promote asteroid awareness and STEM education.
+                            </p>
+                            
+                            <ul class="features-list">
+                                <li><strong>Target HUD</strong>: Visual telescopic grid overlays and radar triangulation sweeps.</li>
+                                <li><strong>Sensors Uplink</strong>: Configurable noise reduction, exposure levels, and signal calibration.</li>
+                                <li><strong>Secure Vault</strong>: Double-encrypted reports portal for local astronomical observatories.</li>
+                            </ul>
+
+                            <div class="panel-meta-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Target Environment</span>
+                                    <span class="spec-val">Android Mobile HUD</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Framework Stack</span>
+                                    <span class="spec-val">Kotlin / Jetpack Compose</span>
+                                </div>
+                            </div>
+
+                            <div class="panel-actions">
+                                <a href="https://agilegallie.github.io/astro-core/" target="_blank" class="btn btn-primary" id="link-launch-astro">Launch Web Application</a>
+                                <a href="https://github.com/Agilegallie/astro-core" target="_blank" class="btn btn-outline" id="link-repo-astro">
+                                    Source Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Video & Phone Viewport -->
+                        <div class="panel-visuals">
+                            <div class="visuals-tabs">
+                                <button class="visual-toggle-btn active" data-target="astro-video" id="btn-astro-vid">Walkthrough Video</button>
+                                <button class="visual-toggle-btn" data-target="astro-preview" id="btn-astro-prev">Phone Interface Preview</button>
+                            </div>
+                            
+                            <div class="visual-viewport-container glass-card">
+                                <!-- Walkthrough Video -->
+                                <div class="visual-item active" id="astro-video">
+                                    <div class="aspect-16-9">
+                                        <iframe src="https://www.youtube.com/embed/I_Li1LePwoY" title="ASTRO-CORE Walkthrough" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                                <!-- Phone Image Mockup -->
+                                <div class="visual-item" id="astro-preview">
+                                    <div class="phone-frame-wrapper">
+                                        <div class="phone-bezel">
+                                            <div class="phone-notch-bar"></div>
+                                            <div class="phone-viewport-screen">
+                                                <img src="https://agilegallie.github.io/astro-core/images/screenshot_1.jpg" alt="Astro Core Interface Screen" class="phone-screenshot-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NASA Smartwatch Deck -->
+                <div class="project-panel" id="panel-watch">
+                    <div class="panel-grid">
+                        <div class="panel-details">
+                            <span class="status-chip badge-orange">ISS CREW WEARABLE</span>
+                            <h3>NASA Smartwatch UI Dashboard</h3>
+                            <p class="panel-desc">
+                                A glanceable Wear OS system interface tailored for astronauts aboard the International Space Station. Features OLED-friendly low-power styling, warning protocols, timers, and ground communications.
+                            </p>
+                            
+                            <ul class="features-list">
+                                <li><strong>Glanceable Schedule</strong>: Orbit timeline monitoring with mission-critical alarms.</li>
+                                <li><strong>Caution & Warning System</strong>: Integrated warning telemetry indicating airlocks, pressure, and thermal health.</li>
+                                <li><strong>Interactive Simulator</strong>: Embedded Wear OS hardware emulator directly below.</li>
+                            </ul>
+
+                            <div class="panel-meta-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Target Environment</span>
+                                    <span class="spec-val">Wear OS (Google Pixel Watch)</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Simulation Framework</span>
+                                    <span class="spec-val">HTML5 / Vanilla CSS / JS Webview</span>
+                                </div>
+                            </div>
+
+                            <div class="panel-actions">
+                                <a href="https://agilegallie.github.io/crew-watch-wireframes/" target="_blank" class="btn btn-primary" id="link-launch-watch">Launch Web Application</a>
+                                <a href="https://github.com/Agilegallie/crew-watch-wireframes" target="_blank" class="btn btn-outline" id="link-repo-watch">
+                                    Source Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Video & Watch Viewport -->
+                        <div class="panel-visuals">
+                            <div class="visuals-tabs">
+                                <button class="visual-toggle-btn active" data-target="watch-sim" id="btn-watch-sim">Interactive Watch Simulator</button>
+                                <button class="visual-toggle-btn" data-target="watch-video" id="btn-watch-vid">Walkthrough Video</button>
+                            </div>
+                            
+                            <div class="visual-viewport-container glass-card">
+                                <!-- Watch Simulator Iframe -->
+                                <div class="visual-item active" id="watch-sim">
+                                    <div class="watch-simulator-frame">
+                                        <div class="watch-crown-element"></div>
+                                        <div class="watch-bezel-element">
+                                            <div class="watch-screen-viewport">
+                                                <iframe src="https://agilegallie.github.io/crew-watch-wireframes/screens/hub.html" title="Interactive Watch Simulator Panel" class="watch-iframe"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="sim-caption-text">Click elements inside the dial above to navigate the live Wear OS simulation.</p>
+                                </div>
+
+                                <!-- Walkthrough Video -->
+                                <div class="visual-item" id="watch-video">
+                                    <div class="aspect-16-9">
+                                        <iframe src="https://www.youtube.com/embed/cJXVbh0_1Ic" title="NASA Smartwatch Walkthrough" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Telemetry Terminal Logs Section -->
+    <section id="console" class="console-section">
+        <div class="section-container">
+            <div class="console-card glass-card">
+                <div class="console-header">
+                    <div class="console-controls">
+                        <span class="control-dot dot-close"></span>
+                        <span class="control-dot dot-minimize"></span>
+                        <span class="control-dot dot-maximize"></span>
+                    </div>
+                    <span class="console-title">agilegallie@mission-control:~</span>
+                    <span class="console-status-indicator">SECURE LINK</span>
+                </div>
+                <div class="console-body" id="console-terminal-log">
+                    <div class="console-line text-dim">// Initializing connection to Agilegallie orbital database...</div>
+                    <div class="console-line text-cyan">[OK] Connected to github.com/Agilegallie/astro-core</div>
+                    <div class="console-line text-cyan">[OK] Connected to github.com/Agilegallie/crew-watch-wireframes</div>
+                    <div class="console-line">// Fetching telemetry payload metadata...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications Section -->
+    <section id="tech-specs" class="specs-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="cyan-tag">SYSTEM PARAMETERS</div>
+                <h2>Technical Specifications</h2>
+                <p>Engineering characteristics of the prototypes, built with standard Web & Native platforms.</p>
+            </div>
+
+            <div class="specs-grid">
+                <!-- Stack Card 1 -->
+                <div class="spec-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="spec-icon">Compose</div>
+                    <h4>Android Compose HUD</h4>
+                    <p>Designed using Material 3 UI design libraries, implementing custom canvas overlays, sensor graphing widgets, and thread-safe XML payload parsers.</p>
+                </div>
+                <!-- Stack Card 2 -->
+                <div class="spec-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="spec-icon">OLED</div>
+                    <h4>OLED Power Saving</h4>
+                    <p>The NASA Smartwatch wireframes implement precise `#000000` pitch black pixels to minimize hardware power consumption on active matrix watch displays.</p>
+                </div>
+                <!-- Stack Card 3 -->
+                <div class="spec-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="spec-icon">HTML5</div>
+                    <h4>Vanilla Web App</h4>
+                    <p>Utilizes custom CSS grids, CSS properties variables, HSL color palettes, and responsive aspect frame constraints, free of framework overhead.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="hub-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>AGILEGALLIE</h4>
+                    <p>Open-source spacecraft, observatory, and aerospace UX telemetry prototypes.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Repositories</h5>
+                    <a href="https://github.com/Agilegallie/astro-core" target="_blank">astro-core</a>
+                    <a href="https://github.com/Agilegallie/crew-watch-wireframes" target="_blank">crew-watch-wireframes</a>
+                </div>
+                <div class="footer-links">
+                    <h5>Portals</h5>
+                    <a href="https://agilegallie.github.io/astro-core/" target="_blank">Astro Core Simulator</a>
+                    <a href="https://agilegallie.github.io/crew-watch-wireframes/" target="_blank">Crew Command Simulator</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Agilegallie. Developed for educational and STEM outreach campaigns. Telemetry coordinates are simulated.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
